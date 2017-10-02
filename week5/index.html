@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>The Magic 8 Ball</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
+</head>
+<body>
+
+<p>The Magic 8 Ball</p>
+
+<button onclick="myFunction()"><img src="8.jpeg"></button>
+
+<p id="demo"></p>
+
+<script>
+var n = Math.random();
+
+var a = ["no", "maybe", "i'm not sure", "ask me again", " comeback later", "probably", "I cannot answer this question", "I cannot be bother right now", "The Magic 8 ball is not here right now please leave a message and try again"];
+
+
+function myFunction() {
+    var person = prompt("Please ask me a question");
+    if (person != null) {
+        document.getElementById("demo").innerHTML =
+        a[Math.floor( n * a.length)];
+    }
+}
+</script>
+
+</body>
+</html>
