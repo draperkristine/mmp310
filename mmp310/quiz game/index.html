@@ -1,0 +1,45 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Quiz game</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+    <form id="quiz" name="quiz">
+        <p>If Spongebob was born in 1986 how old is he?</p>
+        <input type="radio" id="mc" name="question1" value="31">31<br>
+        <input type="radio" id="mc" name="question1" value="50">50<br>
+        <input type="radio" id="mc" name="question1" value="10">10<br>
+        <input type="radio" id="mc" name="question1" value="N/A">N/A<br>
+        
+        <p>Whats this Guys Name?</p>
+        <img src="tom.jpg" class="img-responsive" alt="?"><br>
+        <input type="radio" id="mc" name="question2" value="Tom">Tom<br>
+        <input type="radio" id="mc" name="question2" value="Fred">Fred<br>
+        <input type="radio" id="mc" name="question2" value="Frank">Frank<br>
+        <input type="radio" id="mc" name="question2" value="Lou">Lou<br>
+        
+        <p>In Fairy Odd Parents what is the name of timmy's parents?</p>
+        <input type="radio" id="mc" name="question3" value="Dad and Mom">Dad and Mom<br>
+        <input type="radio" id="mc" name="question3" value="Cosmo and Wanda">Cosmo and Wanda<br>
+        <input type="radio" id="mc" name="question3" value="Marge and Daniel">Marge and Daniel<br>
+        <input type="radio" id="mc" name="question3" value="They don't know either">They don't know either<br>
+        
+        <p>When is annoy Squidward day?</p>
+        <img src="annoy.jpg" class="img-responsive" alt="?"><br>
+        <input type="radio" id="mc" name="question4" value="Jan 15">Jan 15<br>
+        <input type="radio" id="mc" name="question4" value="Jan 15">Feb 15<br>
+        <input type="radio" id="mc" name="question4" value="Jan 15">Mar 15<br>
+        <input type="radio" id="mc" name="question4" value="Jan 15">Apr 15<br>
+        
+       <input id = "button" type = "button" value = "I'm finished!" onClick = "check()">
+        </form>
+                 <div id = "after_submit">
+                    <p id = "number_correct"></p>
+                    <p id = "message"></p>
+                </div>
+</body>
+</html>
