@@ -1,0 +1,6 @@
+body{
+   font-family: 'PT Sans', sans-serif;
+}
+#after_submit{
+    visibility:hidden;
+}
