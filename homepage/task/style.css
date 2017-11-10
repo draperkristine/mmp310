@@ -1,0 +1,14 @@
+body{
+	text-align:left;
+
+
+    font-family: 'Shadows Into Light', cursive;
+    font-size:150%;
+
+    background: #576574;
+	background: -webkit-linear-gradient(left, #576574, #343845, #181927, #4D1C17, #543C2E);
+	background: -o-linear-gradient(right, #576574, #343845,  #181927, #4D1C17, #543C2E);
+	background: -moz-linear-gradient(right, #576574, #343845,  #181927, #4D1C17, #543C2E);
+	background: linear-gradient(to right, #576574, #343845,  #181927, #4D1C17, #543C2E);
+}
+

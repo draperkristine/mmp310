@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style>
+	body{
+		text-align:center;
+		font-family:'helvetica';
+
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>Anology</h2>
+	</div>
+	<script>
+		var questions = 3;
+		var questionsleft = '[' + " " + questions + 'questionsleft]';
+		var descriptiveword = prompt('please type a word that describes you' + questionsleft);
+		questions -=1;
+		questionsleft = '[' + questions + 'questionsleft]';
+		var des2 = prompt('please type a word that describes you' + questionsleft);
+		questions -= 1;
+		questionsleft = '[' + questions + 'questionsleft]';
+		var des3 = prompt('please type in a word that describes you' + questionsleft);
+		var sentence = "I would be a" + " "+ descriptiveword + " " + des2 + " " + "that would be" + " " + des3 + " " + "anytime"
+		document.write(sentence);
+	</script>
+</body>
+</html> 
