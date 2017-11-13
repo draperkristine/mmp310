@@ -1,6 +1,5 @@
 
-var total = 0;
-
+/*
 document.getElementById('zero').onclick = zero;
 document.getElementById('add1').onclick = add1;
 document.getElementById('sub1').onclick = sub1;
@@ -21,6 +20,7 @@ function sub1() {
 }
 $(document).ready(function() {
 	$('#query').on("keypress", function(event){
+		*/
 		/* keyCode 13 is the enter key to submit query */
 		if (event.keyCode == 13) {
 			var query = this.value;
