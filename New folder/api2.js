@@ -1,5 +1,6 @@
 
-/*
+var total = 0;
+
 document.getElementById('zero').onclick = zero;
 document.getElementById('add1').onclick = add1;
 document.getElementById('sub1').onclick = sub1;
@@ -20,7 +21,6 @@ function sub1() {
 }
 $(document).ready(function() {
 	$('#query').on("keypress", function(event){
-		*/
 		/* keyCode 13 is the enter key to submit query */
 		if (event.keyCode == 13) {
 			var query = this.value;
@@ -57,6 +57,8 @@ $(document).ready(function() {
 					 
 				var clickedCards = [];
 
+				var score=0;
+				var attempt=0;
 				// flip animation
 				
 				// each card/image needs clicks event
@@ -78,12 +80,23 @@ $(document).ready(function() {
 							// match, stay face up
 							console.log("this is a match");
 							// if all matches game is won
+
+
+							score++;
+							  $('#score').text('Number of correct answers ' + score)
+                            
+                            if  (score == cards.length/2){
+                                $('#score').text('Congrationgulations! You Won!!!')
+                            }
+                            
 						} else {
 							// not a match, hide the images
 							$card.children().delay(1000).hide(0);
 							for (let i = 0; i < clickedCards.length; i++) {
 								clickedCards[i].img.delay(1000).hide(0);
 							}
+							  attempt++;
+                            $('#attempt').text('Number of tries ' + attempt)
 						}
 						// clear the current image
 						clickedCards = [];
