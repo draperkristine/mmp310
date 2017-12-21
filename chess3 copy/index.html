@@ -7,20 +7,27 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
    <link rel="stylesheet" href="releases/AbChess-0.3.0/AbChess-0.3.0-min.css">
    <link rel="stylesheet" type="text/css" href="index.css">
+   <link rel="stylesheet" type="text/css" href="index2.css">
+   <script src="javascripts/index2.js"></script>
 
 </head>
 <body>
 
-	<h1 id="chess">Chess</h1>
-	<div id="contianer">
-		<iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/nWNW6PuYqd8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-		<iframe  id="player" width="560" height="315" src="https://www.youtube.com/embed/I8ZWpTT_5IA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-	</div>
-	<!--<div id="menu">
+	
+	<!--<div id="contianer">
+		<iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/nWNW6PuYqd8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></div>-->
+      <div id ="game1"> 
+            <div id="player"><iframe width="560" height="315" src="https://www.youtube.com/embed/I8ZWpTT_5IA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+			<!--<button id="a">A</button> 
+            <button id="b">B</button>-->
+            </div>
+        </div>
+
+<div id="menu">
 	<button id="play">Play</button>
 	<button id="stop">Stop</button>
-	<button id="jump">Jump 5s</button>
-	</div>-->
+	<button id="jump">Jump ahead 5s</button>
+</div>
 
 	<h2>How to Play</h2>
 
@@ -37,8 +44,9 @@
 	<section class="col-xs-4">
 	<h3>The Rook</h3>
 		<img src="images/rook.jpg">
-		 <p>The rook is a piece that can only move horizontally, vertically left and right at anytime. The rook can move anywhere from 1 to 7 spaces in any direction. The rook is the only piece that can particapte in castling move with the king</article>
+		 <p>The rook is a piece that can only move horizontally, vertically left and right at anytime. The rook can move anywhere from 1 to 7 spaces in any direction. The rook is the only piece that can particapte in castling move with the king.
 		</p>
+		</section>
 <section class="col-xs-4">
 	<h3>The Knight</h3>
 		 <img src="images/knight.jpg">
@@ -51,7 +59,7 @@
 		 <img src="images/bishop.jpg">
 		 <p>The bishop can move in any direction diagonally, so long as it is not obstructed by another piece.
 		The bishop piece cannot move past any piece that is obstructing its path.The bishop can take any other piece on the board that is within its bounds of movement. The bishops canonly move on the colored squares they started on</p>
-	</p>
+	</section>
 <section class="col-xs-4">
 		 <img src="images/queen.jpg">		 
 		 <p>The queen is consider the most dangerous and agile piece on the board. This piece is the most important, players would most likely sacrifice just about any other piece on the board to save their queen. The queen you could say is like a combination of the rook and the bishop. 
@@ -67,16 +75,18 @@
 		The king piece cannot move to any square that puts them into a "check" position.
 		The king piece can participate in a move known as "castling", where the piece can move up to three squares while exchanging places with a rook chess piece.</p>
 		</section>
-		 </div>
-		 </div>
+	</div>
+	</div>	 
 
- <!--<div id="chessboard">-->
+ <div id="chessboard">
+ </div>
+
+ <!--<p><a href="Ch63/index.html">To see an example of how the pieces move click this Link</a></p>-->
                    
 
- 	<script src="https://lichess.org/embed?w=1016&h=650"></script>
+ 	<!--<script src="https://lichess.org/embed?w=1016&h=650"></script>-->
     <script src="releases/AbChess-0.3.0/AbChess-0.3.0-min.js"></script>
     <script src="javascripts/index.js"></script>
-
 
 
 </body>
