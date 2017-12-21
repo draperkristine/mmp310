@@ -1,0 +1,29 @@
+button{
+    background-color: lightgrey;
+    border: none;
+    color: dimgrey;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 50%;
+    float: right;
+    z-index: 3;
+    margin-top:15px;
+    margin-right: 5px;
+    
+}
+
+#king{
+  background: #505050;
+  display: block;
+  margin: auto;
+  top: 12%;
+  left: 15%;
+  height: 40%;
+  width:70%;
+  z-index: 1;
+  margin-top: 15px;
+}
